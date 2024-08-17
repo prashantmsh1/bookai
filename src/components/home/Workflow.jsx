@@ -32,12 +32,12 @@ const Workflow = () => {
     ];
     return (
         <div>
-            <div className="relative p-10 mx-auto mt-12 bg-gray-600 dark:bg-violet-300 bg-opacity-10 dark:bg-opacity-10 rounded-xl md:w-11/12">
-                <h1 className="text-4xl font-bold text-center dark:text-white">How it Works</h1>
+            <div className="relative p-10 mx-auto my-12 bg-gray-600 dark:bg-violet-300 bg-opacity-10 dark:bg-opacity-10 rounded-xl md:w-11/12">
+                <h1 className="text-3xl font-bold text-center dark:text-white">How it Works</h1>
                 <div className="grid items-center justify-between grid-cols-1 mt-12 md:grid-cols-2 gap-y-8 gap-x-8 md:flex-row">
                     {data.map((item, index) => (
-                        <div key={index} className="flex gap-x-2">
-                            <div className="p-4  text-xl rounded-full bg-violet-700 *:text-white w-fit h-fit">
+                        <div key={index} className="flex gap-x-4">
+                            <div className="p-4  text-xl rounded-full bg-[linear-gradient(45deg,_#726bff,_#57b6fe)]  *:text-white w-fit h-fit">
                                 {item.icon}
                             </div>
                             <div>

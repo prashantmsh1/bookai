@@ -12,7 +12,7 @@ const Navbar = () => {
                         src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png"
                         alt=""
                     />
-                    <h1 className="text-xl font-bold  md:text-3xl dark:text-white">BookAI</h1>
+                    <h1 className="text-xl font-bold md:text-3xl dark:text-white">BookAI</h1>
                 </div>
             </div>
             <div className="flex items-center gap-x-2">
