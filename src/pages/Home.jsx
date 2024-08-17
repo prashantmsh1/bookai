@@ -5,6 +5,7 @@ import Hero from "../components/home/Hero";
 import DemoPage from "../components/home/DemoPage";
 import Features from "../components/home/Features";
 import Workflow from "../components/home/Workflow";
+import SampleBook from "../components/home/SampleBook";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
                 <DemoPage />
                 <Features />
                 <Workflow />
+                <SampleBook />
             </div>
         </div>
     );
