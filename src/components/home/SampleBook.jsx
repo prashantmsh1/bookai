@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const SampleBook = () => {
     const data = [
         {
@@ -29,11 +29,16 @@ const SampleBook = () => {
                     Explore some of the captivating books created using our AI technology
                 </h3>
             </div>
-            <div className="flex flex-wrap md:flex-nowrap md:gap-x-8">
+            <div className="flex flex-wrap mt-12 md:flex-nowrap md:gap-x-8">
                 {data.map((item, index) => (
-                    <div
+                    <motion.div
+                        whileHover={{
+                            y: -8,
+                            transition: { duration: 0.2 },
+                            spring: { type: "spring", stiffness: 300, damping: 30 },
+                        }}
                         key={index}
-                        className="relative max-w-[380px] flex flex-col items-center justify-center p-4 mx-auto mt-12 bg-gray-600 bg-opacity-10 dark:bg-[rgba(255,_255,_255,_0.05)]dark:bg-opacity-20 rounded-xl">
+                        className="relative md:max-w-[400px] max-w-[380px] flex flex-col items-center justify-center p-4 mx-auto mt-12 bg-gray-600 bg-opacity-10 dark:bg-[rgba(255,_255,_255,_0.05)]dark:bg-opacity-20 rounded-xl">
                         <div className="relative object-fill h-[300px] w-[200px]  ">
                             <img src={item.image} alt="" />
                         </div>
@@ -44,7 +49,7 @@ const SampleBook = () => {
                         <button className="mt-4 text-xl font-bold text-violet-900 w-fit">
                             Read more
                         </button>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
